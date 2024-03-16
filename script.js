@@ -110,7 +110,7 @@ const tl = gsap.timeline();
 //   stagger: 0.1,
 //   duration: 0.2,
 //   delay:0.5,
-//   scrollTrigger: {
+//   scrollTrigger: { 
 //       trigger: '.char',
 //       scroller: '.main',
 //       markers: true,
