@@ -6,7 +6,7 @@ function Toggle(e) {
     navLinks.classList.toggle('show-menu')
 }
 
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
@@ -14,12 +14,42 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".page",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swipe-next",
+      prevEl: ".swipe-prev",
     },
   });
  
+  var swiper2 = new Swiper(".swiper-testi", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+        delay:3000
+    },
+    loop: true,
+    pagination: {
+      el: ".testi-page",
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".testi-prev",
+      nextEl: ".testi-next",
+    },
+  });
+
+  // const scroll = new LocomotiveScroll({
+  //   el: document.querySelector('.main'),
+  //   smooth: true
+  // });
+
+
+// const tl = gsap.timeline();
+// tl.from(".nav-links ul", {
+//   y: 10,
+//   delay: 1,
+//   duration: 1,
+//   opacity:0,
+// })
