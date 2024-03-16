@@ -49,6 +49,14 @@ body {
       transform: translateY(0); /* Ensure the menu is visible on larger screens */
   }
 }
+/* #text-head{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height:4rem;
+}
+#text-head1{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height:4rem;
+} */
 /* FOOTER  */
 
 #footer {

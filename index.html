@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canara</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -27,6 +28,7 @@
 </head>
 
 <body class="font-[main-font]">
+  <div class="main w-full min-h-full">
     <div class="marquee border-b-[1px] border-zinc-900 p-2 flex">
         <marquee class="flex">
             <div class="flex gap-10">
@@ -69,7 +71,7 @@
 
 
   <!-- Swiper -->
-  <div class="swiper mySwiper w-full h-3/4">
+  <div class="swiper mySwiper w-full h-[82vh]">
     <div class="swiper-wrapper h-full">
       <div class="swiper-slide w-full h-full"><img class="object-cover object-center w-full h-full"
           src="./images/building.jpg" alt=""></div>
@@ -86,9 +88,9 @@
   </div>
 
   <!-- Read section -->
-  <div class="bg-white py-24 sm:py-32">
+  <div class="about bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:text-center">
+      <div class="mx-auto max-w-2xl lg:text-center"  data-scroll data-scroll-speed="2">
         <h2 class="text-base font-semibold leading-7 text-blue-900">About Us</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Discover a New World of Knowledge at
           CEC.
@@ -101,7 +103,7 @@
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-          <div class="relative pl-16">
+          <div class="relative pl-16"  data-scroll data-scroll-speed="3">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
                 <ion-icon class="text-white" name="people-outline"></ion-icon>
@@ -111,7 +113,7 @@
             <dd class="mt-2 text-base leading-7 text-gray-600">Canara Engineering College (CEC) is a premier engineering
               institute of the Mangalore region with affiliated to VTU, Belgaum.</dd>
           </div>
-          <div class="relative pl-16">
+          <div class="relative pl-16"  data-scroll data-scroll-speed="3">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
                 <ion-icon class="text-white" name="stats-chart-outline"></ion-icon>
@@ -121,7 +123,7 @@
             <dd class="mt-2 text-base leading-7 text-gray-600">To be an Engineering Institute of highest repute and
               produce world- class engineers catering to the needs of mankind.</dd>
           </div>
-          <div class="relative pl-16">
+          <div class="relative pl-16"  data-scroll data-scroll-speed="3">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
                 <ion-icon class="text-white" name="terminal-outline"></ion-icon>
@@ -131,7 +133,7 @@
             <dd class="mt-2 text-base leading-7 text-gray-600">Provide the right environment to develop quality
               education for all, irrespective of caste, creed or religion to produce future leaders.</dd>
           </div>
-          <div class="relative pl-16">
+          <div class="relative pl-16"  data-scroll data-scroll-speed="3">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
                 <ion-icon class="text-white" name="terminal-outline"></ion-icon>
@@ -147,18 +149,17 @@
       </div>
     </div>
   </div>
-  <!-- Department -->
   <!-- Management -->
 
   <div class="management bg-[#1F2937] w-full text-white p-12">
-    <div class="management-head mx-auto w-full text-center px-12 py-16 sm:px-6 sm:py-24 md:max-w-7xl">
-      <h1 class="md:text-5xl lg:text-6xl text-4xl font-bold tracking-tight">Our Management</h1>
-      <h1 class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <div class="management-head mx-auto w-full text-center px-4 py-10 sm:px-12 sm:py-16 md:max-w-7xl" data-scroll data-scroll-speed="2">
+      <h1 class="md:text-5xl lg:text-6xl sm:text-4xl text-3xl font-bold tracking-tight">Our Management</h1>
+      <h2 class="text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
     </div>
 
     <div
-      class="management-cards-section w-full mt-6 grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 md:grid-cols-3 xl:gap-x-20">
-      <div class="management-card relative rounded-md shadow-md w-full p-5 bg-[#22313f]">
+      class="management-cards-section w-full mt-6 grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 md:grid-cols-3 xl:gap-x-20" data-scroll data-scroll-speed="2">
+      <div class="management-card relative rounded-md shadow-md w-full p-5 bg-[#22313f]" >
         <div class="img-section mx-auto max-w-2xl lg:max-w-4xl">
           <img class="mx-auto w-52 rounded-full" src="./images/rb.jpg" alt="">
           <div class="management-names text-center mt-6 w-full">
@@ -194,7 +195,8 @@
 
 
     <!-- Swiper -->
-    <div class="swiper swiper-testi  overflow-hidden">
+    <div class="swiper swiper-testi mx-auto w-full overflow-hidden" data-scroll data-scroll-speed="2">
+      <h1 class="md:text-5xl text-center text-blue-900 mt-5 lg:text-6xl sm:text-4xl text-3xl font-bold tracking-tight">Testimonials</h1>
       <div class="swiper-wrapper">
       <!-- slider1 -->
         <div class="swiper-slide w-full">
@@ -271,10 +273,14 @@
       </div>
     </div>
   </div>
+  <div class="swiper-button-next swipe-next testi-next text-blue font-semibold md:block hidden"></div>
+  <div class="swiper-button-prev swipe-prev testi-prev text-blue font-semibold md:block hidden"></div>
+  <div class="swiper-pagination page testi-page"></div>
+  </div>
 
   <!-- DEPARTMENTS ------------------------ -->
   <div class="DEPARTMENT flex flex-col gap-2 px-4 md:px-10 py-2 md:py-5">
-    <div class="DEPTHEAD font-semibold text-2xl md:text-3xl w-full text-center pb-6 md:pb-10">DEPARTMENTS</div>
+    <div class="DEPTHEAD font-semibold text-2xl md:text-3xl w-full text-center pb-6 md:pb-10" id="text-head1">DEPARTMENTS</div>
     <div class="EACHDEPT relative rounded-md overflow-hidden px-4 md:px-10" x-data="{ open: false }">
         <div @click="open = !open" class="cursor-pointer bg-white rounded-full px-8 md:px-12 py-4 md:py-5 flex justify-between items-center hover:border-blue-400 border transition duration-300">
             <h1 class="font-semibold">DEPARTMENT</h1>
@@ -528,6 +534,11 @@
       </div>
     </footer>
   </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/split-type"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 
