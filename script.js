@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
-        delay:3000
+        delay:1500
     },
     loop: true,
     pagination: {
