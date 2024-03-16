@@ -141,19 +141,20 @@ gsap.from(".management", {
 //   }
   
 // })
-// gsap.from(".char", {
-//   y: 100,
-//   stagger: 0.02,
-//   duration: 0.2,
-//   delay:0.5,
-//   scrollTrigger: {
-//       trigger: '.char',
-//       scroller: '.main',
-//       markers: true,
-//     start: "top 100%"
-//   }
+gsap.from(".swiper-testi h1", {
+  y: 100,
+  stagger: 0.02,
+  duration: 0.2,
+  delay: 0.5,
+  opacity:0,
+  scrollTrigger: {
+      trigger: '.swiper-testi h1',
+      scroller: '.main',
+      // markers: true,
+    start: "top 100%"
+  }
   
-// })
+})
 gsap.from(".about", {
   opacity: 0,
   stagger: 0.02,
